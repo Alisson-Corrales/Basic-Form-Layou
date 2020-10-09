@@ -1,0 +1,63 @@
+/* Basic Form Style*/
+
+
+form{
+    /* center form on page*/
+    margin: 0 auto;
+    width: 400px;
+    /* form outline*/
+    padding: 1em;
+    border: 2px solid #292929;
+    border-radius: 1em;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+fieldset{
+    border: 1px solid #292929;
+    border-radius:1em
+}
+
+form li+li{
+    margin-top: 1em;
+}
+
+label{
+    /* uniform size and alignment */
+    display: inline-block;
+    width: 80px;
+    text-align: right;
+}
+
+input, text area{
+    /* set the font for all text areas */
+    font: 1em sans-serif;
+    /* uniform text field sizes*/
+    width: 280px;
+    box-sizing: border-box;
+    /* borders mathing the field borders */
+    border: 1px solid #292929;
+}
+
+input:focus, textarea:focus{
+    /* additional highlighting for focus elements */
+    border-color: paleturquoise;
+    border-radius: .25em;
+    outline-style: none;
+    background-color: pink;
+}
+
+textarea{
+    /* align miltiline text fields w/ their labels */
+    vertical-align: top;
+    /* provide some space to type text*/
+    height: 5em;
+}    
+button{
+       /* align buttons with the text fields*/
+       margin-left: calc(80px + .5em);
+}
